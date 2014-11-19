@@ -9,7 +9,7 @@ jQuery(document).ready(function	(){
 
 		function wordCounter(string) {
 			string = string.toLowerCase();
-			string = string.replace(/[,.?!-]/g, '');
+			string = string.replace(/[,.?!-";]/g, ''); 
 			var sortedWords = string.split(" ");
 			sortedWords = sortedWords.sort();
 			var previous = "";
